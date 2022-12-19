@@ -2,7 +2,7 @@
 
 **Run NodeJS App**
 1. create .env copy from env-example
-2. cd nodejs-sample
+2. cd NodeJS-sample
 3. npm install
 4. npm run start
 5. access api from localhost:8080
