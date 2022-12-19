@@ -18,8 +18,9 @@ app.get('/', (req, res) => {
     res.json({ message: "This is default route in postCRUD" })
 })
 
+mongoose.set('strictQuery', true);
 mongoose.connect(process.env.DATABASE || "").then(() => {
-    console.log("DATABASE CONNECTED !");
+    console.log("DATABASE CONNECTED !", process.env.DATABASE);
 
     app.listen(PORT, () => {
         console.log("Listen @ ", PORT);
